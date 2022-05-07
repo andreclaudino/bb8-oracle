@@ -1,0 +1,18 @@
+[package]
+name = "bb8-oracle"
+version = "0.1.0"
+authors = ["Ondřej Hošek <ondra.hosek@gmail.com>", "Ralph Ursprung <ralph.ursprung@gmail.com>"]
+edition = "2018"
+description = "Oracle support for the bb8 connection pool"
+repository = "https://github.com/RavuAlHemio/bb8-oracle"
+keywords = ["oracle", "sql", "pool", "database", "bb8"]
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+async-trait = { version = "0.1" }
+bb8 = { version = "0.8" }
+oracle = { version = "0.5" }
+tokio = { version = "1.18" }
+
+[features]
+chrono = ["oracle/chrono"]
